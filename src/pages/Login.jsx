@@ -21,7 +21,7 @@ const Login = () => {
           Explore the app
         </button>
         <p>
-          Don't Have An Account? ?
+          Do You Need An Account?
           <Link to="/register" className="member-btn">
             Register
           </Link>
