@@ -1,9 +1,10 @@
 import links from '../utils/links';
 import { NavLink } from 'react-router-dom';
 import { useDashboardContext } from '../pages/DashboardLayout';
+import PropTypes from 'prop-types';
 
-const NavLinks = () => {
-  const { toggleSidebar, user } = useDashboardContext();
+const NavLinks = ({ isBigSidebar }) => {
+  const { toggleSidebar } = useDashboardContext();
 
   return (
     <div className="nav-links">
@@ -14,7 +15,7 @@ const NavLinks = () => {
             to={path}
             key={text}
             className="nav-link"
-            onClick={toggleSidebar}
+            onClick={isBigSidebar ? null : toggleSidebar}
             end
           >
             <span className="icon">{icon}</span>
@@ -24,6 +25,10 @@ const NavLinks = () => {
       })}
     </div>
   );
+};
+
+NavLinks.propTypes = {
+  isBigSidebar: PropTypes.bool,
 };
 
 export default NavLinks;

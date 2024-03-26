@@ -1,4 +1,4 @@
 const AddJob = () => {
-  return <div>Add Job</div>;
+  return <div></div>;
 };
 export default AddJob;

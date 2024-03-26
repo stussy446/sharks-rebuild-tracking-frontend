@@ -1,9 +1,9 @@
 import Wrapper from '../assets/wrappers/Navbar';
 import { FaAlignLeft } from 'react-icons/fa';
 import Logo from './Logo';
-import { useDashboardContext } from '../pages/DashboardLayout';
 
-const NavBar = () => {
+import { useDashboardContext } from '../pages/DashboardLayout';
+const Navbar = () => {
   const { toggleSidebar } = useDashboardContext();
   return (
     <Wrapper>
@@ -20,4 +20,5 @@ const NavBar = () => {
     </Wrapper>
   );
 };
-export default NavBar;
+
+export default Navbar;
