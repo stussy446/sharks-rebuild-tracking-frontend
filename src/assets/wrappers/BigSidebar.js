@@ -45,6 +45,7 @@ const Wrapper = styled.aside`
       color: var(--primary-500);
       transition: var(--transition);
     }
+
     .icon {
       font-size: 1.5rem;
       margin-right: 1rem;
@@ -53,9 +54,6 @@ const Wrapper = styled.aside`
     }
     .active {
       color: var(--primary-500);
-    }
-    .pending {
-      background: var(--background-color);
     }
   }
 `;
